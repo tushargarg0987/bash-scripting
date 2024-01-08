@@ -5,7 +5,9 @@ echo -e "Choose an option: \na for printing date \nb for printing list of script
 read -p "Option: " choice
 
 case $choice in
-	a)date;;
+	a)
+		echo "Today's date is: "
+		date;;
 	b)ls;;
 	c)pwd;;
 	*)echo "Provide a valid input"
