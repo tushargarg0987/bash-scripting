@@ -20,3 +20,7 @@ then
 else
         echo "You are not eligible"
 fi
+
+#TERNARY Operator
+
+[[ $age -ge 18 ]] && echo "Bete, bada ho gya ab" || echo "Bacha hai tu abi"
