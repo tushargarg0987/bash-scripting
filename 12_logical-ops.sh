@@ -1,13 +1,22 @@
 #!/bin/bash
 
-#AND Operator
-
 read -p "What is your age: " age
 read -p "What is your country: " country
+
+#AND Operator
 
 if [[ $age -ge 18 ]] && [[ $country == "India" ]]
 then
 	echo "You can vote"
 else
 	echo "You can't vote"
+fi
+
+#OR Operator
+
+if [[ $age -ge 18 ]] || [[ $country == "India" ]]
+then
+        echo "Hey buddy, welcome"
+else
+        echo "You are not eligible"
 fi
