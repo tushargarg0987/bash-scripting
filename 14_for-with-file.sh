@@ -3,7 +3,7 @@
 #Fetching values from file
 
 #File path
-FILE="./names.txt"
+FILE="./14_names.txt"
 
 for name in $(cat $FILE)
 do
